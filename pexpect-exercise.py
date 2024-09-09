@@ -1,7 +1,7 @@
 import pexpect
 import sys
 import os
-#R1-13
+#R1-8
 R1_ip = "172.31.108.3"
 R1_username = os.environ.get('TELNET_USER')
 R1_password = os.environ.get('TELNET_PASSWORD')
@@ -29,8 +29,8 @@ child.expect('\(config-if\)#')
 print("Loopback0 172.16.1.1 is created on %s"%R1_ip)
 
 
-#R2-13
-R2_ip = "172.31.113.4"
+#R2-8
+R2_ip = "172.31.108.4"
 R2_username = os.environ.get('TELNET_USER')
 R2_password = os.environ.get('TELNET_PASSWORD')
 R2_command = 'ip address 172.16.2.2 255.255.255.255'
